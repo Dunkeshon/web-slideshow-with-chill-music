@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Show</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet"  href="styles.css">
+	<script src="scripts.js"></script>
+</head>
+<body>
+	<div class="fixed-container" >
+		
+	
+		<h2> Welcome to our slide show!</h2>
+		<div id="nav-panel" >
+			<ul class="nav__items">
+				<li>
+					<div id="no_choose">
+						Interval in seconds:
+					</div>
+					<input type="text" name="interval_seconds" 
+					id="input_delay" value="5" onchange="setTimerDelay()">
+					 s.
+				 </li>
+				<li>
+					<div id="no_choose">
+						Width:
+					</div> 
+					<input type="text" id="input_width" value="1000"
+					onchange="setWidth()"> 
+				</li>
+				<li>
+					<div id="no_choose">
+						Height:
+					</div> 
+					<input type="text" id="input_height" value="750"
+					onchange="setHeight()"> 
+				</li>
+				
+			</ul>
+			
+		</div>
+		<img src="img/art1.jpg" alt="slides" id="slide">
+		<audio controls id="player_lenght">
+			<source src="audio/chill.mp3" type="audio/mpeg" >
+		</audio>
+	</div>
+
+</body>
+</html>
